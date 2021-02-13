@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cv_CardView"
     android:layout_width="match_parent"
@@ -11,45 +10,55 @@
     android:foreground="?selectableItemBackground"
     app:cardCornerRadius="10dp">
 
-<RelativeLayout
-    android:id="@+id/rl_wrapper"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="20dp">
-
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/rl_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_height="match_parent"
+        android:padding="20dp">
 
-    <ImageView
-        android:id="@+id/iv_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:src="@mipmap/ic_launcher_round" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Title AlNews"
-        android:textSize="14sp"
-        android:textColor="#082E70"/>
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_launcher_round" />
 
-    <TextView
-        android:id="@+id/tv_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="description description description"
-        android:textColor="@android:color/black"
-        android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Title AllNews"
+                android:textColor="#082E70"
+                android:textSize="14sp" />
 
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="2"
+                android:text="description description description"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
 
-</LinearLayout>
-</RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
